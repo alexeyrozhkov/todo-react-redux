@@ -1,0 +1,28 @@
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer-checkbox {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url('../../images/checkbox.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+}
+.footer-checkbox.selected {
+    background-image: url('../../images/checkboxSelected.svg');
+}
+.footer-checkbox:hover {
+    cursor: pointer;
+}
+.footer-text {
+    font-size: 20px;
+    color: #363636;
+}

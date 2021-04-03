@@ -1,0 +1,110 @@
+.task {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 61px;
+    margin-bottom: 13px;
+    padding: 0 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 6px 6px 14px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    font-weight: 400;
+}
+.content {
+    display: flex;
+    align-items: center;
+    width: 83%;
+}
+
+.task.completed,
+.content.completed {
+    background-color: #e4e4e4;
+    color: #656565;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+    background-image: url('../../images/checkbox.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+}
+.checkbox:hover {
+    cursor: pointer;
+}
+.checkbox.selected {
+    background-image: url('../../images/checkboxSelected.svg');
+}
+.task-input {
+    height: 42px;
+    padding: 0 14px;
+    caret-color: #3b8ef3;
+    border: 1px solid #cccccc;
+    outline: none;
+    transition: border-color 0.1s ease-in-out;
+    width: 100%;
+    border-color: transparent;
+    background-color: #fff;
+    font-size: 20px;
+    text-overflow: ellipsis;
+}
+.task-input:focus {
+    border-bottom: 1px solid #3b8ef3;
+}
+li.completed .content input[type='text'] {
+    background-color: #e4e4e4;
+}
+.star {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+    background-image: url('../../images/star.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+}
+.star.selected {
+    background-image: url('../../images/starSelected.svg');
+}
+.star:hover {
+    cursor: pointer;
+    background-image: url('../../images/starHover.svg');
+}
+.star.selected:hover {
+    background-image: url('../../images/starSelected.svg');
+}
+
+.edit {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    margin-right: 20px;
+    background-image: url('../../images/edit.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+}
+.edit:hover {
+    cursor: pointer;
+    background-image: url('../../images/editHover.svg');
+}
+
+.remove {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url('../../images/remove.svg');
+    background-color: transparent;
+    background-size: cover;
+    border: none;
+}
+.remove:hover {
+    cursor: pointer;
+    background-image: url('../../images/removeHover.svg');
+}
